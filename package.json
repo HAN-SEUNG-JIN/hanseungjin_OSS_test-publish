@@ -1,0 +1,29 @@
+{
+    "name": "lab7",
+    "version": "0.1.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Han-Seung-Jin/hanseungjin_OSS_test-publish.git"
+    },
+    "bin": {
+        "stat": "./main.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Han-Seung-Jin/hanseungjin_OSS_test-publish/issues"
+    },
+    "homepage": "https://github.com/Han-Seung-Jin/hanseungjin_OSS_test-publish#readme",
+    "devDependencies": {
+        "jest": "^27.2.5"
+    },
+    "dependencies": {
+        "cli": "^1.0.1",
+        "open": "^8.3.0"
+    }
+}
