@@ -14,7 +14,21 @@ function mean2(numbers) {
     if (numbers.length % 2 !== 0) {
         return "Invalid input";
     }
-    return;
+    let x = 0;
+    let y = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        if ((i + 1) % 2 !== 0) {
+            x += numbers[i];
+        } else {
+            y += +numbers[i];
+        }
+    }
+    x = (x / (numbers.length / 2)).toFixed(2);
+    y = (y / (numbers.length / 2)).toFixed(2);
+    str1 = x.toString();
+    str2 = x.toString();
+    str3 = str1 + " " + str2;
+    return str3;
 }
 
 module.exports = {
