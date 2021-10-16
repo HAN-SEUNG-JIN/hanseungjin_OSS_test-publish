@@ -6,6 +6,7 @@ if (process.argv.length <= 3) {
     console.log("Insufficient parameter!");
     process.exit(1);
 }
+
 let command = process.argv[2];
 
 let numbers = process.argv
@@ -18,7 +19,6 @@ if (numbers.some((n) => isNaN(n))) {
 }
 
 let result;
-
 switch (command) {
     case "sum":
         result = lib.sum(numbers);
@@ -28,6 +28,9 @@ switch (command) {
         break;
     case "max":
         result = lib.max(numbers);
+        break;
+    case "mean2":
+        result = lib.mean2(numbers);
         break;
     default:
         console.log("Wrong command!");
