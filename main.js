@@ -32,6 +32,9 @@ switch (command) {
     case "mean2":
         result = lib.mean2(numbers);
         break;
+    case "med2":
+        result = lib.med2(numbers);
+        break;
     default:
         console.log("Wrong command!");
         process.exit(1);
