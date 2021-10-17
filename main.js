@@ -35,9 +35,11 @@ switch (command) {
     case "med2":
         result = lib.med2(numbers);
         break;
+    case "pareto":
+        result = lib.pareto(numbers);
+        break;
     default:
         console.log("Wrong command!");
         process.exit(1);
 }
-
-console.log(result);
+if (command !== "pareto") console.log(result);

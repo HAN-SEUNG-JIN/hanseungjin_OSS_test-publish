@@ -58,10 +58,32 @@ function med2(numbers) {
     return str3;
 }
 
+function pareto(numbers) {
+    if (numbers.length % 2 !== 0) {
+        return "Invalid input";
+    }
+    let x, y;
+    for (let i = 0; i < numbers.length / 2; i++) {
+        x = numbers[2 * i];
+        y = numbers[2 * i + 1];
+        let j;
+        for (j = 0; j < numbers.length / 2; j++) {
+            if (x < numbers[2 * j] && y < numbers[2 * j + 1]) {
+                break;
+            }
+        }
+        if (j === numbers.length / 2) {
+            console.log(x, y);
+        }
+    }
+    return;
+}
+
 module.exports = {
     sum,
     avg,
     max,
     mean2,
     med2,
+    pareto,
 };
