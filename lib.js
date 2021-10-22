@@ -60,7 +60,8 @@ function med2(numbers) {
 
 function pareto(numbers) {
     if (numbers.length % 2 !== 0) {
-        return "Invalid input";
+        console.log("Invalid input");
+        return;
     }
     let x, y;
     for (let i = 0; i < numbers.length / 2; i++) {
